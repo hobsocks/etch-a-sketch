@@ -11,16 +11,14 @@
     <h1>Interactable Etch-A-Sketch!</h1>
     <div class="header">
         <h5>Select Size</h6>
-        <p class='message'></p>
-        <button id="size-selector" onclick="getSize()">Select</button>
+        <button id="popup">Select</button>
     </div>
-    
-    <div class="board">
-    </div>
+    <p id="message"></p>
+    <div class="board"></div>
     <div class="footer">
-        <button>Black</button>
-        <button>Random</button>
-        <button>Erase</button>
+        <button onclick="setColor('black')">Black</button>
+        <button onclick="setColor('random')">Random</button>
+        <button onclick="resetBoard()">Erase</button>
     </div>
 <body>
     
